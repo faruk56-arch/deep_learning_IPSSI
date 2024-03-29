@@ -1,0 +1,25 @@
+# Prédiction de Quantité de Pluie (RR)
+
+## Objectif
+Ce projet vise à développer une application web permettant de prédire la quantité de pluie à un poste donné, en fonction de plusieurs paramètres comme la latitude, la longitude, l'altitude et la date. L'application utilise un modèle de régression (RandomForestRegressor) entraîné préalablement pour effectuer les prédictions.
+
+## Technologies et Librairies Utilisées
+- Flask : Pour le développement de l'application web.
+- Pandas : Pour le traitement des données.
+- scikit-learn : Pour l'utilisation du modèle RandomForestRegressor.
+- joblib : Pour charger le modèle entraîné.
+
+## Algorithme
+Le modèle utilise l'algorithme RandomForestRegressor, un algorithme d'apprentissage automatique basé sur les arbres de décision, pour prédire la quantité de pluie. Le modèle a été entraîné sur un ensemble de données historiques comprenant les coordonnées géographiques des postes, l'altitude et les quantités de pluie observées.
+
+## Données
+Les données utilisées pour entraîner le modèle incluent :
+- Latitude, Longitude, Altitude du poste
+- Date (format AAAAMMJJ)
+- Quantité de pluie observée (variable à prédire)
+
+## Comment lancer l'application
+1. Installez les dépendances nécessaires en exécutant `pip install -r requirements.txt`.
+2. Lancez l'application Flask en exécutant `python flask.py` dans votre terminal.
+3. Accédez à l'application web via votre navigateur en visitant l'adresse [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
+
